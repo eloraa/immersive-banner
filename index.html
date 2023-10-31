@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./src/css/base.css" />
   </head>
 
-  <body class="md:h-full flex flex-col justify-between">
+  <body class="h-full flex flex-col justify-between">
     <header class="px-5 md:px-12 py-6 flex justify-between">
       <a href="/">
         <div class="w-8 group hover:text-red transition-colors">
@@ -26,7 +26,10 @@
       <a href="./credits.html" class="font-semibold">Credits</a>
     </header>
     <div id="app" class="h-full">
-      <div class="h-full w-full flex">
+      <div class="px-5 md:px-12 py-6 landscape:hidden font-bold">
+        Please rotate your device. <span class="w-3.5 inline-block"><img class="w-full h-full" src="./assets/media/images/sad.png" alt="" /></span>
+      </div>
+      <div class="h-full w-full flex portrait:hidden">
         <div class="w-1/2 h-full overflow-hidden relative cursor-pointer transition-[width] hover:w-[70vw] duration-500">
           <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/20 z-10 flex items-end justify-end px-6 py-8 font-bold text-white">
             <h1 class="[text-shadow:_0_0_10px_rgb(0_0_0_/_80%)]">Hitori Bocchi</h1>
