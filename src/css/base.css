@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+    background-color: #000;
+    color: #fff;
+}
+
+a {
+    @apply transition-colors;
+    @apply duration-300;
+}
+
+a:hover,
+a:focus {
+    @apply text-red;
+}
